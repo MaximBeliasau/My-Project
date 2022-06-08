@@ -11,6 +11,9 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+  
+    
+//    проверка на вход пользователя
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -22,10 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    
+//    метод вызова модального окна если пользователь вошел
     func showModalAuth(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let newVC = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
-        self.window?.rootViewController?.present(newVC, animated: true, completion: nil)
+        let newvc = storyboard.instantiateViewController(withIdentifier: "RegistrationViewController") as! RegistrationViewController
+        self.window?.rootViewController?.present(newvc, animated: true, completion: nil)
     }
     
     

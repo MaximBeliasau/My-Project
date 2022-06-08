@@ -8,6 +8,8 @@
 import UIKit
 import Firebase
 class RegistrationViewController: UIViewController {
+    var ref: DatabaseReference!
+//создаем переменную при изменении которой будет срабатывать WILLSET
     var signup:Bool = true{
         willSet{
             if newValue{
@@ -31,6 +33,19 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        ref = Database.database().reference(withPath: "users")
+
+        Auth.auth().addStateDidChangeListener { [weak self] _, user in
+            guard let _ = user else { return }
+            self?.performSegue(withIdentifier: "StartViewController", sender: nil)
+            self?.emailField.text = nil
+            self?.passwordField.text = nil
+        }
+        
+        
+        
         nameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
