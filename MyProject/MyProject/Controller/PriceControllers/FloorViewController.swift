@@ -9,12 +9,32 @@ import UIKit
 
 class FloorViewController: UIViewController {
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let desination = segue.destination as? wallsViewController
+            {
+                desination.FloorSum = allSumFloor.text ?? ""
+                
+            }
+        }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            if let desination = segue.destination as? ResultViewController
+//            {
+//                desination.FloorSquare = allFloorSquare.text ?? ""
+//                
+//            }
+//        }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            if touches.first != nil {
+                view.endEditing(true)
+            }
+            super.touchesBegan(touches, with: event)
+        }
     @IBOutlet var laminateSquare: UITextField!
     @IBOutlet var parquetBootDoscaSquare: UITextField!
     @IBOutlet var parquetArtificialSquare: UITextField!
@@ -25,16 +45,19 @@ class FloorViewController: UIViewController {
     
     @IBOutlet var allFloorSquare: UILabel!
     
-   
-        var laminateSquareDouble = 0
-        var parquetBootDoscaSquareDouble:Double = 0
-        var parquetArtificialSquareDouble:Double = 0
-        var tetkaSquareDouble:Double = 0
-        var linoliumSquareDouble:Double = 0
-        var quartzvinilSquareDouble:Double = 0
-        var otherFloorSquareDouble:Double = 0
+    @IBOutlet var nextFloor: UILabel!
     
-        var allFloorSquareDouble:Double = 0
+    @IBOutlet var allSumFloor: UILabel!
+    
+//        var laminateSquareDouble = 0
+//        var parquetBootDoscaSquareDouble:Double = 0
+//        var parquetArtificialSquareDouble:Double = 0
+//        var tetkaSquareDouble:Double = 0
+//        var linoliumSquareDouble:Double = 0
+//        var quartzvinilSquareDouble:Double = 0
+//        var otherFloorSquareDouble:Double = 0
+//    
+//        var allFloorSquareDouble:Double = 0
     
     
 //        func hi () {
@@ -50,16 +73,65 @@ class FloorViewController: UIViewController {
 //
     @IBAction func ActionFloor(_ sender: Any) {
         
-        
+       
        
         allFloorSquare.text = "\(Double(laminateSquare.text ?? "")! + Double(parquetBootDoscaSquare.text ?? "")! + Double(parquetArtificialSquare.text ?? "")! + Double(tetkaSquare.text ?? "")! + Double(linoliumSquare.text ?? "")! + Double(quartzvinilSquare.text ?? "")! + Double(otherFloorSquare.text ?? "")!)"
+        
+//        let allFloorSquareSum = \(Double(allFloorSquare.text ?? "")!
+
+        
+              let laminatePrice:Double = 10
+            let parquetBootDoscaPrice:Double = 16
+            let parquetArtificialPrice:Double = 26
+            let tetkaPrice:Double = 26
+            let linoliumPrice:Double = 9
+            let quartzvinilPrice:Double = 10
+            let otherFloorPrice:Double = 16
+//            let PreparationOfTheFloorPrice:Double = 5
+
+//            allSumFloor.text = "\(Double(laminateSquare.text ?? "")! * laminatePrice) "
+            
+        
+        allSumFloor.text = "\(Double(laminateSquare.text ?? "")! * laminatePrice + Double(parquetBootDoscaSquare.text ?? "")! * parquetBootDoscaPrice + Double(parquetArtificialSquare.text ?? "")! * parquetArtificialPrice + Double(tetkaSquare.text ?? "")! * tetkaPrice + Double(linoliumSquare.text ?? "")! * linoliumPrice + Double(quartzvinilSquare.text ?? "")! * quartzvinilPrice + Double(otherFloorSquare.text ?? "")! * otherFloorPrice)"
+        
+        
+        nextFloor.isHidden = false
+      
     }
+    
+   
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            guard segue.identifier == "showSecond" else { return }
+//            guard let destination = segue.destination as? ResultViewController else { return }
+//            destination.name = "Андрей"
+//        }
+    
+    
+    
+    
+    
+    
+    
+//    func allSumFloorLabel () {
+//            let laminateSquareDouble = laminateSquare.text
+//
+//        allSumFloor.text = "\(Double(laminateSquareDouble ?? "")! * laminatePrice)"
+//        }
+    
+    
+    
+    
+//    let sumlaminate = \Double(laminateSquareDouble ?? "")!
+    
+    
     
     
     
     
    
     
+   
+   
     
 
 //    повесить экщн и сложить все значения
@@ -83,14 +155,14 @@ class FloorViewController: UIViewController {
     
     
 
-    var laminatePrice:Double = 4
-    let parquetBootDoscaPrice:Double = 10
-    let parquetArtificialPrice:Double = 15
-    let tetkaPrice:Double = 18
-    let linoliumPrice:Double = 3
-    let quartzvinilPrice:Double = 4
-    let otherFloorPrice:Double = 10
-    let PreparationOfTheFloorPrice:Double = 5
+    
+//    let parquetBootDoscaPrice:Double = 10
+//    let parquetArtificialPrice:Double = 15
+//    let tetkaPrice:Double = 18
+//    let linoliumPrice:Double = 3
+//    let quartzvinilPrice:Double = 4
+//    let otherFloorPrice:Double = 10
+//    let PreparationOfTheFloorPrice:Double = 5
 
 //    let sumlaminate = laminateSquareDouble * laminatePrice
 //

@@ -9,9 +9,12 @@ import UIKit
 
 
 
-
 class wallsViewController: UIViewController {
 
+    var FloorSum = ""
+
+
+    
     @IBOutlet var wallpaperSquare: UITextField!
     @IBOutlet var paintingSquare: UITextField!
     @IBOutlet var simpleDecorSquare: UITextField!
@@ -22,58 +25,52 @@ class wallsViewController: UIViewController {
     @IBOutlet var otherWallSquare: UITextField!
     @IBOutlet var allWallSquare: UILabel!
     
+    @IBOutlet var nextWall: UILabel!
+    
+    @IBOutlet var allSumWalls: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+print(FloorSum)
     }
-    
-
-    var wallpaperSquareDouble:Double = 10
-    var paintingSquareDouble:Double = 15
-    var simpleDecorSquareDouble:Double = 40
-    var complexDecorSquareDouble:Double = 0
-    var tileSquareDouble:Double = 12
-    var gypsumPanelsSquareDouble:Double = 16
-    var pictureSquareDouble:Double = 20
-    var otherWallSquareDouble:Double = 4
    
-    var allWallSquareDouble:Double = 0
     
-    var wallpaperPrice:Double = 4
-    var paintingPrice:Double = 15
-    var simpleDecorPrice:Double = 20
-    var complexDecorPrice:Double = 30
-    var tilePrice:Double = 18
-    var gypsumPanelsPrice:Double = 20
-    var picturePrice:Double = 50
-    var otherWallPrice:Double = 20
-    let PreparationOfTheWallPrice:Double = 10
     
-//    let sumWallpaper = wallpaperSquareDouble * wallpaperPrice
-//    let sumPainting = paintingSquareDouble * paintingPrice
-//    let sumSimpleDecor = simpleDecorSquareDouble * simpleDecorPrice
-//    let sumComplexDecor = complexDecorSquareDouble * complexDecorPrice
-//    let sumTile = tileSquareDouble * tilePrice
-//    let sumPicture = pictureSquareDouble * picturePrice
-//    let sumOtherWall = otherWallSquareDouble * otherWallPrice
-//    let sumPreparationOfTheWall = allWallSquareDouble * PreparationOfTheWallPrice
-//
-//    let allSumWall = sumPreparationOfTheWall + sumWallpaper + sumPainting + sumSimpleDecor + sumComplexDecor + sumTile + sumPicture + sumOtherWall
-//
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            if touches.first != nil {
+                view.endEditing(true)
+            }
+            super.touchesBegan(touches, with: event)
+        }
+    
+    @IBAction func ActionWall(_ sender: Any) {
+        
+        
+       
+        allWallSquare.text = "\(Double(wallpaperSquare.text ?? "")! + Double(paintingSquare.text ?? "")! + Double(simpleDecorSquare.text ?? "")! + Double(complexDecorSquare.text ?? "")! + Double(tileSquare.text ?? "")! + Double(gypsumPanelsSquare.text ?? "")! + Double(pictureSquare.text ?? "")!)"
+        
+        
+        let wallpaperPrice:Double = 17
+        let paintingPrice:Double = 23
+        let simpleDecorPrice:Double = 33
+        let complexDecorPrice:Double = 43
+        let tilePrice:Double = 30
+            let gypsumPanelsPrice:Double = 30
+            let picturePrice:Double = 70
 
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
+        
+        allSumWalls.text = "\(Double(wallpaperSquare.text ?? "")! * wallpaperPrice + Double(paintingSquare.text ?? "")! * paintingPrice + Double(simpleDecorSquare.text ?? "")! * simpleDecorPrice + Double(complexDecorSquare.text ?? "")! * complexDecorPrice + Double(tileSquare.text ?? "")! * tilePrice + Double(gypsumPanelsSquare.text ?? "")! * gypsumPanelsPrice + Double(pictureSquare.text ?? "")! * picturePrice)"
+        
+        
+        nextWall.isHidden = false
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+ 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let desination = segue.destination as? CeilingViewController
+            {
+                desination.WallsSum = "\(Double(allSumWalls.text ?? "")! + Double(FloorSum )!)"
+            }
+        }
 }

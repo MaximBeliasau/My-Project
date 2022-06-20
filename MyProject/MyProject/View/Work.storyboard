@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="08c-21-a3R">
+            <objects>
+                <viewController storyboardIdentifier="Work" id="e4r-Xm-EhE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pK0-Ok-nLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ce-fJ-2iQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="1Nf-aJ-FEO">
+                                <rect key="frame" x="10" y="64" width="394" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfI-ac-dd9">
+                                        <rect key="frame" x="54" y="0.0" width="286.5" height="38"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Поиск исполнителей работ">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Просмотрите профиль исполнителей работ, и предложите ему выполнить ваше техническое задание" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4v-5G-ulg">
+                                <rect key="frame" x="20" y="152" width="374" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLc-fH-K3E">
+                                <rect key="frame" x="20" y="794.5" width="374" height="47.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Выбрать исполнителя">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ugm-Oh-SxM" kind="show" id="GhN-61-2FW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rhq-jG-hAP"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="I4v-5G-ulg" firstAttribute="leading" secondItem="Rhq-jG-hAP" secondAttribute="leading" constant="20" id="0dR-Tu-C7s"/>
+                            <constraint firstItem="I4v-5G-ulg" firstAttribute="top" secondItem="1Nf-aJ-FEO" secondAttribute="bottom" constant="50" id="4ZD-5U-ePj"/>
+                            <constraint firstItem="Rhq-jG-hAP" firstAttribute="trailing" secondItem="I4v-5G-ulg" secondAttribute="trailing" constant="20" id="HNt-nF-agD"/>
+                            <constraint firstItem="XLc-fH-K3E" firstAttribute="leading" secondItem="Rhq-jG-hAP" secondAttribute="leading" constant="20" id="MJB-eN-OoN"/>
+                            <constraint firstItem="Rhq-jG-hAP" firstAttribute="trailing" secondItem="1Nf-aJ-FEO" secondAttribute="trailing" constant="10" id="SQo-KA-I0x"/>
+                            <constraint firstItem="1Nf-aJ-FEO" firstAttribute="leading" secondItem="Rhq-jG-hAP" secondAttribute="leading" constant="10" id="Z2Y-Wj-b6i"/>
+                            <constraint firstItem="Rhq-jG-hAP" firstAttribute="trailing" secondItem="XLc-fH-K3E" secondAttribute="trailing" constant="20" id="ddV-TP-wOg"/>
+                            <constraint firstItem="Rhq-jG-hAP" firstAttribute="bottom" secondItem="XLc-fH-K3E" secondAttribute="bottom" constant="20" id="iTE-kV-9m2"/>
+                            <constraint firstItem="1Nf-aJ-FEO" firstAttribute="top" secondItem="Rhq-jG-hAP" secondAttribute="top" constant="20" id="vr4-ir-DpK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ql5-ov-CL3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVl-xm-rxd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2125" y="1284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qdq-1P-BP6">
+            <objects>
+                <viewController id="ugm-Oh-SxM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xYR-GP-9Bz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image_54" translatesAutoresizingMaskIntoConstraints="NO" id="c6x-8c-QQS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="DdK-yE-fOs">
+                                <rect key="frame" x="10" y="302.5" width="394" height="237.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvn-bd-pGK">
+                                        <rect key="frame" x="68" y="0.0" width="258" height="52.5"/>
+                                        <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Maxim Belyasov">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="32"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="eEL-12-f7S" kind="showDetail" id="Rmo-ri-RUk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-VW-zaA">
+                                        <rect key="frame" x="67.5" y="92.5" width="259" height="52.5"/>
+                                        <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alexandr Alshyk">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="32"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="oDP-21-ihM" kind="showDetail" id="u7O-iI-uJ4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cz6-hY-0Z0">
+                                        <rect key="frame" x="69.5" y="185" width="255" height="52.5"/>
+                                        <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Nikolai Zharikov">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="32"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="krs-eE-SKJ" kind="showDetail" id="qw9-Df-1fw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Gt-20-HIg"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Gt-20-HIg" firstAttribute="trailing" secondItem="DdK-yE-fOs" secondAttribute="trailing" constant="10" id="Lb1-AT-MuT"/>
+                            <constraint firstItem="DdK-yE-fOs" firstAttribute="centerY" secondItem="xYR-GP-9Bz" secondAttribute="centerY" id="MQa-zI-Y3r"/>
+                            <constraint firstItem="DdK-yE-fOs" firstAttribute="leading" secondItem="xYR-GP-9Bz" secondAttribute="leading" constant="10" id="fQE-nS-0al"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Wh-HU-s8w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BnW-Ya-bLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2995.6521739130435" y="1283.7053571428571"/>
+        </scene>
+        <!--Maxim BelyasovVC-->
+        <scene sceneID="g2O-vL-Sh8">
+            <objects>
+                <viewController id="eEL-12-f7S" customClass="MaximBelyasovVC" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nig-Nm-oIe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image_51" translatesAutoresizingMaskIntoConstraints="NO" id="06Y-N0-UU1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pg3-82-aQp">
+                                <rect key="frame" x="10" y="144" width="394" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUR-Sp-KEh">
+                                        <rect key="frame" x="4.5" y="0.0" width="385" height="86"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="https://www.instagram.com/maxim_belyasov/">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newsButton" destination="eEL-12-f7S" eventType="touchUpInside" id="CIX-Hg-441"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWM-jZ-ySk">
+                                <rect key="frame" x="57.5" y="54" width="299" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pf5-XU-MlP"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+375 (29) 275 26 81">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cX2-50-f2P"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="cX2-50-f2P" firstAttribute="trailing" secondItem="pg3-82-aQp" secondAttribute="trailing" constant="10" id="Bfa-qw-US8"/>
+                            <constraint firstItem="gWM-jZ-ySk" firstAttribute="top" secondItem="cX2-50-f2P" secondAttribute="top" constant="10" id="Pjt-a7-GWb"/>
+                            <constraint firstItem="pg3-82-aQp" firstAttribute="top" secondItem="cX2-50-f2P" secondAttribute="top" constant="100" id="ScT-Zl-b6R"/>
+                            <constraint firstItem="gWM-jZ-ySk" firstAttribute="centerX" secondItem="Nig-Nm-oIe" secondAttribute="centerX" id="VP9-Nc-zf4"/>
+                            <constraint firstItem="pg3-82-aQp" firstAttribute="leading" secondItem="cX2-50-f2P" secondAttribute="leading" constant="10" id="lhw-MZ-dR0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="B6t-Pf-RKB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2G1-Iy-ErM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4084" y="460"/>
+        </scene>
+        <!--Sasha AlshukVC-->
+        <scene sceneID="5CT-0N-F3W">
+            <objects>
+                <viewController id="oDP-21-ihM" customClass="SashaAlshukVC" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WIu-n7-1Wd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image_52" translatesAutoresizingMaskIntoConstraints="NO" id="LuI-Cr-4Cz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XKZ-2H-Fy4">
+                                <rect key="frame" x="10" y="144" width="394" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8L-Oj-4iz">
+                                        <rect key="frame" x="4.5" y="0.0" width="385" height="86"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="https://www.instagram.com/sasha_alshuk/">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newsButton" destination="oDP-21-ihM" eventType="touchUpInside" id="Hnl-xV-DXS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-y2-hEo">
+                                <rect key="frame" x="53.5" y="44" width="307" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PdP-p4-co8"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+375 (29) 680 42 80">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0w0-Hv-ku8"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="XKZ-2H-Fy4" firstAttribute="top" secondItem="0w0-Hv-ku8" secondAttribute="top" constant="100" id="16m-9p-EnC"/>
+                            <constraint firstItem="0w0-Hv-ku8" firstAttribute="trailing" secondItem="XKZ-2H-Fy4" secondAttribute="trailing" constant="10" id="SK5-rU-NQ9"/>
+                            <constraint firstItem="XKZ-2H-Fy4" firstAttribute="leading" secondItem="0w0-Hv-ku8" secondAttribute="leading" constant="10" id="ZW4-oa-kbh"/>
+                            <constraint firstItem="ZLa-y2-hEo" firstAttribute="top" secondItem="0w0-Hv-ku8" secondAttribute="top" id="ajO-3I-2jb"/>
+                            <constraint firstItem="ZLa-y2-hEo" firstAttribute="centerX" secondItem="WIu-n7-1Wd" secondAttribute="centerX" id="fRQ-P3-mWt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DuJ-A0-jsR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJF-sQ-8lo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4083" y="1284"/>
+        </scene>
+        <!--Nikolai ZharikovVC-->
+        <scene sceneID="Y4N-2k-yyD">
+            <objects>
+                <viewController id="krs-eE-SKJ" customClass="NikolaiZharikovVC" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nwH-xN-IK9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image_53" translatesAutoresizingMaskIntoConstraints="NO" id="0GZ-6n-6nT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Oc7-fW-dLM">
+                                <rect key="frame" x="10" y="144" width="394" height="86"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfT-o4-KL6">
+                                        <rect key="frame" x="4.5" y="0.0" width="385" height="86"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="https://www.instagram.com/remont_i_otdelka.by/">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newsButton" destination="krs-eE-SKJ" eventType="touchUpInside" id="Kqc-7d-mwq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGi-Ic-yD9">
+                                <rect key="frame" x="57" y="54" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JTG-6h-Ru5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+375 (29) 672 91 83">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1NB-Bg-AGE"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="BGi-Ic-yD9" firstAttribute="centerX" secondItem="nwH-xN-IK9" secondAttribute="centerX" id="Fee-xN-bDt"/>
+                            <constraint firstItem="Oc7-fW-dLM" firstAttribute="leading" secondItem="1NB-Bg-AGE" secondAttribute="leading" constant="10" id="afy-0p-LCL"/>
+                            <constraint firstItem="1NB-Bg-AGE" firstAttribute="trailing" secondItem="Oc7-fW-dLM" secondAttribute="trailing" constant="10" id="h24-8x-POZ"/>
+                            <constraint firstItem="BGi-Ic-yD9" firstAttribute="top" secondItem="1NB-Bg-AGE" secondAttribute="top" constant="10" id="hhI-qr-ft2"/>
+                            <constraint firstItem="Oc7-fW-dLM" firstAttribute="top" secondItem="1NB-Bg-AGE" secondAttribute="top" constant="100" id="kBn-bn-OTI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BwT-S3-UdY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3A-5k-6nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4083" y="2142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image_51" width="1080" height="1080"/>
+        <image name="Image_52" width="972" height="972"/>
+        <image name="Image_53" width="1440" height="1495"/>
+        <image name="Image_54" width="880" height="610"/>
+        <image name="image_10" width="1024" height="683"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

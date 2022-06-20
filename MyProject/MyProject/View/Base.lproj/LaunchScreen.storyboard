@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,9 +14,29 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_5" translatesAutoresizingMaskIntoConstraints="NO" id="xuS-rE-D4K">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbi-4x-IgG">
+                                <rect key="frame" x="134" y="582" width="123" height="132.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="77"/>
+                                <color key="textColor" red="0.96731370687484741" green="0.89951779283224409" blue="0.33536387236307336" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="9"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="xuS-rE-D4K" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FB1-L6-bBV"/>
+                            <constraint firstAttribute="bottom" secondItem="xuS-rE-D4K" secondAttribute="bottom" id="I35-lh-Pmq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xuS-rE-D4K" secondAttribute="trailing" id="LTH-K2-uAO"/>
+                            <constraint firstItem="Cbi-4x-IgG" firstAttribute="top" secondItem="xuS-rE-D4K" secondAttribute="bottom" constant="-314" id="UH1-db-wjB"/>
+                            <constraint firstItem="xuS-rE-D4K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ULN-Kl-uVw"/>
+                            <constraint firstItem="xuS-rE-D4K" firstAttribute="leading" secondItem="Cbi-4x-IgG" secondAttribute="trailing" constant="-257" id="tPZ-R0-LYO"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="KSK-2I-2yz" appends="YES" id="Aab-1y-FdK"/>
                         </connections>
@@ -30,8 +49,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="image_5" width="1024" height="683"/>
     </resources>
 </document>

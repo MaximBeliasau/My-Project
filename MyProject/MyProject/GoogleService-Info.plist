@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>285826189753-qundvg81do3f833vbf574c925v8dev8r.apps.googleusercontent.com</string>
+	<string>41748641507-m6ep5cpau2lqhljj0gsdgih8gf2pv1o1.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.285826189753-qundvg81do3f833vbf574c925v8dev8r</string>
+	<string>com.googleusercontent.apps.41748641507-m6ep5cpau2lqhljj0gsdgih8gf2pv1o1</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCnQpKAMQi6pcbUUyjR2kL9b888-UG6gf4</string>
+	<string>AIzaSyB1Lsq1rAW5A9RB7mf-IIa-sF97QvAsAPs</string>
 	<key>GCM_SENDER_ID</key>
-	<string>285826189753</string>
+	<string>41748641507</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>ru.mail.Max-kolbasa.MyProject</string>
 	<key>PROJECT_ID</key>
-	<string>myproject-753a5</string>
+	<string>mypronew-8e8e6</string>
 	<key>STORAGE_BUCKET</key>
-	<string>myproject-753a5.appspot.com</string>
+	<string>mypronew-8e8e6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:285826189753:ios:66cb28b8b1c70418d08e68</string>
+	<string>1:41748641507:ios:131c6bcf56a9cc2babb7d6</string>
 </dict>
 </plist>

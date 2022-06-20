@@ -1,27 +1,25 @@
+//////
+//////  StartViewController.swift
+//////  MyProject
+//////
+//////  Created by Maxim Belyasov on 29.05.22.
+//////
+////
+//import UIKit
+//import Firebase
 //
-//  StartViewController.swift
-//  MyProject
+//class StartViewController: UIViewController {
 //
-//  Created by Maxim Belyasov on 29.05.22.
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
 //
-
-import UIKit
-import Firebase
-
-class StartViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    @IBAction func logoutAction(_ sender: Any) {
-        do{
-            try Auth.auth().signOut()
-        }catch{
-            print(error)
-        }
-    }
-}
+//    }
+//
+//    @IBAction func logoutAction(_ sender: Any) {
+//        do{
+//            try Auth.auth().signOut()
+//        }catch{
+//            print(error)
+//        }
+//    }
+//}
