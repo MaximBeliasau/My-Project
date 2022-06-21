@@ -12,22 +12,9 @@ class FirstVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func singOutButton(_ sender: UIBarButtonItem) {
-        
         do {
             try Auth.auth().signOut()
         } catch {
@@ -37,14 +24,12 @@ class FirstVC: UIViewController {
     }
     
     @IBAction func personalAccoutButton(_ sender: UIBarButtonItem) {
-        
     }
     
     @IBAction func photoButton() {
     }
     
     @IBAction func newsButton() {
-        
     }
     
     @IBAction func mapButton() {
@@ -52,6 +37,4 @@ class FirstVC: UIViewController {
     
     @IBAction func storiesButton() {
     }
-    
-    
 }

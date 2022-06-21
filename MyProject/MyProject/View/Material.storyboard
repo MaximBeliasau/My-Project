@@ -488,7 +488,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="dfssd:" destination="EDA-f8-ghW" eventType="touchUpInside" id="khN-a7-Ete"/>
+                                            <action selector="newButton" destination="EDA-f8-ghW" eventType="touchUpInside" id="ChO-0n-6d8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNN-Si-vlW">

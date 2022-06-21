@@ -90,13 +90,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страница находится в разработке!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gK-88-9aZ">
+                                <rect key="frame" x="30" y="351" width="354" height="140"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.79375402709999998" green="0.18009385319999999" blue="0.1411978696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4ft-sQ-1gP"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
+                            <constraint firstItem="5gK-88-9aZ" firstAttribute="centerY" secondItem="p6d-fl-I2y" secondAttribute="centerY" id="51B-R5-7CR"/>
                             <constraint firstItem="4ft-sQ-1gP" firstAttribute="trailing" secondItem="1S4-PM-bn8" secondAttribute="trailing" constant="10" id="CJy-w7-ev5"/>
+                            <constraint firstAttribute="trailing" secondItem="5gK-88-9aZ" secondAttribute="trailing" constant="30" id="DDg-lU-ZA2"/>
                             <constraint firstItem="1S4-PM-bn8" firstAttribute="leading" secondItem="4ft-sQ-1gP" secondAttribute="leading" constant="10" id="GnN-pK-vD3"/>
                             <constraint firstItem="1S4-PM-bn8" firstAttribute="top" secondItem="4ft-sQ-1gP" secondAttribute="top" constant="10" id="Mqp-Vi-RUj"/>
+                            <constraint firstItem="5gK-88-9aZ" firstAttribute="leading" secondItem="p6d-fl-I2y" secondAttribute="leading" constant="30" id="fGH-6G-SNc"/>
+                            <constraint firstItem="5gK-88-9aZ" firstAttribute="centerX" secondItem="p6d-fl-I2y" secondAttribute="centerX" id="gj6-1W-01d"/>
                             <constraint firstItem="4ft-sQ-1gP" firstAttribute="bottom" secondItem="1S4-PM-bn8" secondAttribute="bottom" constant="10" id="pIJ-th-5BY"/>
                         </constraints>
                     </view>
@@ -187,21 +197,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страница находится в разработке!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x46-45-Kke">
+                                <rect key="frame" x="30" y="351" width="354" height="140"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.79375402706185572" green="0.18009385324628471" blue="0.14119786962180053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nYv-Qr-fgP"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="nYv-Qr-fgP" firstAttribute="trailing" secondItem="D72-Lc-vGG" secondAttribute="trailing" constant="10" id="2Lg-tz-kdM"/>
+                            <constraint firstItem="x46-45-Kke" firstAttribute="leading" secondItem="nYv-Qr-fgP" secondAttribute="leading" constant="30" id="3jM-LK-2oA"/>
+                            <constraint firstAttribute="trailing" secondItem="x46-45-Kke" secondAttribute="trailing" constant="30" id="JVU-j2-d1m"/>
                             <constraint firstItem="nYv-Qr-fgP" firstAttribute="bottom" secondItem="D72-Lc-vGG" secondAttribute="bottom" constant="10" id="K9Q-70-Of1"/>
                             <constraint firstItem="D72-Lc-vGG" firstAttribute="top" secondItem="nYv-Qr-fgP" secondAttribute="top" constant="10" id="WR7-zf-Xgs"/>
                             <constraint firstItem="D72-Lc-vGG" firstAttribute="leading" secondItem="nYv-Qr-fgP" secondAttribute="leading" constant="10" id="iUc-Q4-2qR"/>
+                            <constraint firstItem="x46-45-Kke" firstAttribute="centerX" secondItem="yVj-4K-gEX" secondAttribute="centerX" id="jhE-C8-Izu"/>
+                            <constraint firstItem="x46-45-Kke" firstAttribute="centerY" secondItem="yVj-4K-gEX" secondAttribute="centerY" id="kZq-LV-bbM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Exd-AP-FQm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zf7-ea-drV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="2877"/>
+            <point key="canvasLocation" x="-284.05797101449275" y="2876.7857142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lpu-ue-2Ye">
@@ -261,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="491" y="2170"/>
         </scene>
-        <!--View Controller-->
+        <!--AdminVC-->
         <scene sceneID="Dhx-5b-ZDm">
             <objects>
-                <viewController id="9tT-5I-Bmm" sceneMemberID="viewController">
+                <viewController id="9tT-5I-Bmm" customClass="AdminVC" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="26f-aw-kMv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,6 +319,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="https://www.instagram.com/maxim_belyasov/">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newsButton" destination="9tT-5I-Bmm" eventType="touchUpInside" id="Jae-pT-L8L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

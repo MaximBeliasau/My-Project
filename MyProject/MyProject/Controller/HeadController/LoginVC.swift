@@ -1,10 +1,10 @@
-//////
-//////  LoginVC.swift
-//////  MyProject
-//////
-//////  Created by Maxim Belyasov on 19.06.22.
-//////
-////
+//
+//  LoginVC.swift
+//  MyProject
+//
+//  Created by Maxim Belyasov on 19.06.22.
+//
+
 import Firebase
 import UIKit
 
@@ -19,9 +19,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         ref = Database.database().reference(withPath: "users")
-
         Auth.auth().addStateDidChangeListener { [weak self] _, user in
             guard let _ = user else { return }
             self?.performSegue(withIdentifier: "toFirstVC", sender: nil)
@@ -29,18 +27,17 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             self?.passwordTF.text = nil
             self?.nameTF.text = nil
         }
-        
-        
-        
     }
-//при нажатии скрывает клавуa
+    
+// метод для скрытия клавиатуры
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.first != nil {
             view.endEditing(true)
         }
         super.touchesBegan(touches, with: event)
     }
-// при ретерн то же скрывает
+    
+// метод для скрытия клавиатуры
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -50,7 +47,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         guard let email = emailTF.text,
               let password = passwordTF.text,
               let username = nameTF.text,
-
                 !email.isEmpty, !password.isEmpty, !username.isEmpty
         else {
             dispalyWarningLabel(withText: "Заполните все поля")

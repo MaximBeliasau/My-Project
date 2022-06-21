@@ -11,9 +11,8 @@ class SashaAlshukVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
     @IBAction func newsButton() {
             if let url = URL(string: "https://www.instagram.com/sasha_alshuk/") {
                 let svc = SFSafariViewController(url: url)

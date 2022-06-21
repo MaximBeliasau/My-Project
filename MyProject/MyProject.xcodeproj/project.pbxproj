@@ -25,25 +25,23 @@
 		EB3233AC285231C600DFA422 /* Material.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3233AB285231C600DFA422 /* Material.storyboard */; };
 		EB3233AE2852325B00DFA422 /* Work.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3233AD2852325B00DFA422 /* Work.storyboard */; };
 		EB3233B02852328A00DFA422 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3233AF2852328A00DFA422 /* Contact.storyboard */; };
+		EB7B1B9628623A3E00DB069B /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7B1B9528623A3E00DB069B /* AdminVC.swift */; };
 		EB7EF4D4285F71CA003CDA41 /* MaximBelyasovVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7EF4D3285F71CA003CDA41 /* MaximBelyasovVC.swift */; };
 		EB920C572843FFDC00721C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB920C562843FFDC00721C38 /* AppDelegate.swift */; };
 		EB920C592843FFDC00721C38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB920C582843FFDC00721C38 /* SceneDelegate.swift */; };
-		EB920C5B2843FFDC00721C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB920C5A2843FFDC00721C38 /* ViewController.swift */; };
 		EB920C5E2843FFDC00721C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB920C5C2843FFDC00721C38 /* Main.storyboard */; };
 		EB920C602843FFDC00721C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB920C5F2843FFDC00721C38 /* Assets.xcassets */; };
 		EB920C632843FFDC00721C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB920C612843FFDC00721C38 /* LaunchScreen.storyboard */; };
-		EB920C7128440A2B00721C38 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB920C7028440A2B00721C38 /* RegistrationViewController.swift */; };
 		EB920C7328440B9A00721C38 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB920C7228440B9A00721C38 /* ForgotPasswordViewController.swift */; };
-		EB920C7528440D6C00721C38 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB920C7428440D6C00721C38 /* StartViewController.swift */; };
 		EB920C7A28440EFB00721C38 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EB920C7928440EFB00721C38 /* FirebaseAnalytics */; };
 		EB920C7C28440EFB00721C38 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB920C7B28440EFB00721C38 /* FirebaseAuth */; };
 		EB920C7E28440EFB00721C38 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = EB920C7D28440EFB00721C38 /* FirebaseCrashlytics */; };
 		EB920C8028440EFB00721C38 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EB920C7F28440EFB00721C38 /* FirebaseDatabase */; };
 		EB920C8228440EFB00721C38 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB920C8128440EFB00721C38 /* FirebaseFirestore */; };
 		EB9AA10B2845453E00C4BF8B /* FloorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9AA10A2845453E00C4BF8B /* FloorViewController.swift */; };
-		EBB3BC39284DAA2D00845AB5 /* wallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BC38284DAA2D00845AB5 /* wallsViewController.swift */; };
+		EBB3BC39284DAA2D00845AB5 /* WallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BC38284DAA2D00845AB5 /* WallsViewController.swift */; };
 		EBB3BC3B284DAA7700845AB5 /* СeilingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BC3A284DAA7700845AB5 /* СeilingViewController.swift */; };
-		EBB3BC3D284DAAC100845AB5 /* additionallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BC3C284DAAC100845AB5 /* additionallyViewController.swift */; };
+		EBB3BC3D284DAAC100845AB5 /* AdditionallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BC3C284DAAC100845AB5 /* AdditionallyViewController.swift */; };
 		EBE4AD7528527428003F41F1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4AD7428527428003F41F1 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,22 +64,20 @@
 		EB3233AB285231C600DFA422 /* Material.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Material.storyboard; sourceTree = "<group>"; };
 		EB3233AD2852325B00DFA422 /* Work.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Work.storyboard; sourceTree = "<group>"; };
 		EB3233AF2852328A00DFA422 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		EB7B1B9528623A3E00DB069B /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
 		EB7EF4D3285F71CA003CDA41 /* MaximBelyasovVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximBelyasovVC.swift; sourceTree = "<group>"; };
 		EB920C532843FFDB00721C38 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB920C562843FFDC00721C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB920C582843FFDC00721C38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB920C5A2843FFDC00721C38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB920C5D2843FFDC00721C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB920C5F2843FFDC00721C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB920C622843FFDC00721C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB920C642843FFDC00721C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB920C7028440A2B00721C38 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		EB920C7228440B9A00721C38 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		EB920C7428440D6C00721C38 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		EB9AA10A2845453E00C4BF8B /* FloorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorViewController.swift; sourceTree = "<group>"; };
-		EBB3BC38284DAA2D00845AB5 /* wallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wallsViewController.swift; sourceTree = "<group>"; };
+		EBB3BC38284DAA2D00845AB5 /* WallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallsViewController.swift; sourceTree = "<group>"; };
 		EBB3BC3A284DAA7700845AB5 /* СeilingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СeilingViewController.swift"; sourceTree = "<group>"; };
-		EBB3BC3C284DAAC100845AB5 /* additionallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additionallyViewController.swift; sourceTree = "<group>"; };
+		EBB3BC3C284DAAC100845AB5 /* AdditionallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionallyViewController.swift; sourceTree = "<group>"; };
 		EBE4AD7428527428003F41F1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,10 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				EB116449285F07A800E001AE /* LoginVC.swift */,
-				EB920C7028440A2B00721C38 /* RegistrationViewController.swift */,
 				EB920C7228440B9A00721C38 /* ForgotPasswordViewController.swift */,
 				EB11644B285F0A4E00E001AE /* FirstVC.swift */,
-				EB920C7428440D6C00721C38 /* StartViewController.swift */,
 			);
 			path = HeadController;
 			sourceTree = "<group>";
@@ -116,7 +110,6 @@
 		EB488FA0285130F700561E34 /* OrgonizationController */ = {
 			isa = PBXGroup;
 			children = (
-				EB920C5A2843FFDC00721C38 /* ViewController.swift */,
 				EB0726CE285113A100DFB83E /* RecommendViewController.swift */,
 				EB0726D02851178C00DFB83E /* RequestViewController.swift */,
 			);
@@ -134,6 +127,7 @@
 				EB0D532A285FD08B006122EB /* StroyMaserVC.swift */,
 				EB0D532C285FD0A6006122EB /* OMAVC.swift */,
 				EB0D532E285FD0C3006122EB /* MileVC.swift */,
+				EB7B1B9528623A3E00DB069B /* AdminVC.swift */,
 			);
 			path = ContactController;
 			sourceTree = "<group>";
@@ -214,8 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				EBB3BC3A284DAA7700845AB5 /* СeilingViewController.swift */,
-				EBB3BC3C284DAAC100845AB5 /* additionallyViewController.swift */,
-				EBB3BC38284DAA2D00845AB5 /* wallsViewController.swift */,
+				EBB3BC3C284DAAC100845AB5 /* AdditionallyViewController.swift */,
+				EBB3BC38284DAA2D00845AB5 /* WallsViewController.swift */,
 				EBE4AD7428527428003F41F1 /* ResultViewController.swift */,
 				EB9AA10A2845453E00C4BF8B /* FloorViewController.swift */,
 			);
@@ -309,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE4AD7528527428003F41F1 /* ResultViewController.swift in Sources */,
-				EB920C5B2843FFDC00721C38 /* ViewController.swift in Sources */,
 				EB9AA10B2845453E00C4BF8B /* FloorViewController.swift in Sources */,
 				EB0726D12851178C00DFB83E /* RequestViewController.swift in Sources */,
 				EBB3BC3B284DAA7700845AB5 /* СeilingViewController.swift in Sources */,
@@ -321,17 +314,16 @@
 				EB116446285F06EA00E001AE /* Task.swift in Sources */,
 				EB0D532F285FD0C3006122EB /* MileVC.swift in Sources */,
 				EB7EF4D4285F71CA003CDA41 /* MaximBelyasovVC.swift in Sources */,
+				EB7B1B9628623A3E00DB069B /* AdminVC.swift in Sources */,
 				EB0D532D285FD0A6006122EB /* OMAVC.swift in Sources */,
 				EB920C572843FFDC00721C38 /* AppDelegate.swift in Sources */,
-				EB920C7128440A2B00721C38 /* RegistrationViewController.swift in Sources */,
 				EB11644A285F07A800E001AE /* LoginVC.swift in Sources */,
-				EBB3BC3D284DAAC100845AB5 /* additionallyViewController.swift in Sources */,
+				EBB3BC3D284DAAC100845AB5 /* AdditionallyViewController.swift in Sources */,
 				EB920C592843FFDC00721C38 /* SceneDelegate.swift in Sources */,
 				EB11644C285F0A4E00E001AE /* FirstVC.swift in Sources */,
-				EBB3BC39284DAA2D00845AB5 /* wallsViewController.swift in Sources */,
+				EBB3BC39284DAA2D00845AB5 /* WallsViewController.swift in Sources */,
 				EB0D5329285FC6D9006122EB /* SvetVDomeVC.swift in Sources */,
 				EB0D5327285FC444006122EB /* SanTexVC.swift in Sources */,
-				EB920C7528440D6C00721C38 /* StartViewController.swift in Sources */,
 				EB0726CF285113A100DFB83E /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +476,7 @@
 				DEVELOPMENT_TEAM = 6Z9WLHL789;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Max Build";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -512,6 +505,7 @@
 				DEVELOPMENT_TEAM = 6Z9WLHL789;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Max Build";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

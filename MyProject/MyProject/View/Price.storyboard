@@ -242,7 +242,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-JB-94V">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-JB-94V">
                                 <rect key="frame" x="57" y="801" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="0OT-PA-Bpq"/>
@@ -302,7 +302,7 @@
                         <outlet property="allSumFloor" destination="5n3-JB-94V" id="oze-Zx-DmC"/>
                         <outlet property="laminateSquare" destination="BEG-uG-7ce" id="lo2-CI-sWz"/>
                         <outlet property="linoliumSquare" destination="1RL-oP-onC" id="mz8-Rq-4AG"/>
-                        <outlet property="nextFloor" destination="IOa-Gp-ZgH" id="FXI-YZ-hgJ"/>
+                        <outlet property="nextFloor" destination="Yk4-gd-wIB" id="ei9-gP-khO"/>
                         <outlet property="otherFloorSquare" destination="tdf-N9-2hh" id="ePx-hb-WDn"/>
                         <outlet property="parquetArtificialSquare" destination="r5A-M3-0lt" id="lco-Zl-2iR"/>
                         <outlet property="parquetBootDoscaSquare" destination="1b7-bV-9lW" id="XZq-Ip-LZm"/>
@@ -317,7 +317,7 @@
         <!--Walls View Controller-->
         <scene sceneID="6db-FR-HuU">
             <objects>
-                <viewController storyboardIdentifier="wallsViewController" id="HCz-3r-n4o" customClass="wallsViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wallsViewController" id="HCz-3r-n4o" customClass="WallsViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NYl-Pa-Ijd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -506,7 +506,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjb-hl-WQv">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjb-hl-WQv">
                                 <rect key="frame" x="57" y="801" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Qst-Rb-2R4"/>
@@ -726,7 +726,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjQ-IO-8oE">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjQ-IO-8oE">
                                 <rect key="frame" x="57" y="801" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="CJz-Gb-ho9"/>
@@ -799,7 +799,7 @@
         <!--Additionally View Controller-->
         <scene sceneID="Rh7-Qp-0BF">
             <objects>
-                <viewController storyboardIdentifier="additionallyViewController" id="dLY-3K-4xf" customClass="additionallyViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="additionallyViewController" id="dLY-3K-4xf" customClass="AdditionallyViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAF-Aq-G9y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -911,7 +911,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-F9-gGp">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-F9-gGp">
                                 <rect key="frame" x="57" y="801" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="pfL-yN-u5g"/>
@@ -1006,27 +1006,38 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-Kk-ndw">
-                                <rect key="frame" x="95.5" y="367" width="223" height="108.5"/>
+                                <rect key="frame" x="100" y="258" width="214" height="83.5"/>
                                 <color key="tintColor" red="0.96731370689999996" green="0.89951779279999999" blue="0.33536387239999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="70"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="70"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <color key="highlightedColor" red="0.96731370689999996" green="0.89951779279999999" blue="0.33536387239999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUm-W9-F4n">
+                                <rect key="frame" x="20" y="391.5" width="374" height="183"/>
+                                <mutableString key="text">Выше указана предварительная стоимость выполнения работ без строительного и отделочного материала, согласно вашему техническому заданию и заполненной вами информации. Стоимость указана в долларах США. Перейдя в "ГЛАВНОЕ МЕНЮ" вы сможете найти испонителя работ и поставщиков материалов.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4vo-Ob-fSL"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="4vo-Ob-fSL" firstAttribute="trailing" secondItem="i1M-xR-Z9P" secondAttribute="trailing" id="1ua-t0-UWw"/>
+                            <constraint firstItem="eUm-W9-F4n" firstAttribute="leading" secondItem="4vo-Ob-fSL" secondAttribute="leading" constant="20" id="3tQ-gu-ADi"/>
                             <constraint firstItem="P2H-Kk-ndw" firstAttribute="centerX" secondItem="d1q-hk-bFY" secondAttribute="centerX" id="Dqg-7M-xp0"/>
+                            <constraint firstItem="P2H-Kk-ndw" firstAttribute="top" secondItem="Mau-HQ-57Y" secondAttribute="bottom" constant="100" id="N03-yw-bRY"/>
                             <constraint firstItem="Mau-HQ-57Y" firstAttribute="top" secondItem="4vo-Ob-fSL" secondAttribute="top" constant="20" id="Qs3-oe-tNg"/>
                             <constraint firstItem="Mau-HQ-57Y" firstAttribute="centerX" secondItem="d1q-hk-bFY" secondAttribute="centerX" id="YkM-1t-56H"/>
-                            <constraint firstItem="P2H-Kk-ndw" firstAttribute="centerY" secondItem="d1q-hk-bFY" secondAttribute="centerY" id="k9T-9F-4pX"/>
                             <constraint firstItem="4vo-Ob-fSL" firstAttribute="bottom" secondItem="i1M-xR-Z9P" secondAttribute="bottom" constant="20" id="lpk-qu-e0F"/>
+                            <constraint firstAttribute="trailing" secondItem="eUm-W9-F4n" secondAttribute="trailing" constant="20" id="xH5-u0-c3E"/>
+                            <constraint firstItem="eUm-W9-F4n" firstAttribute="top" secondItem="P2H-Kk-ndw" secondAttribute="bottom" constant="50" id="xRc-KG-B1b"/>
                             <constraint firstItem="i1M-xR-Z9P" firstAttribute="leading" secondItem="4vo-Ob-fSL" secondAttribute="leading" id="z1U-jW-A9B"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dNe-CN-Jf8"/>
                     <connections>
+                        <outlet property="InstructionLabel" destination="eUm-W9-F4n" id="9z0-Zx-x3t"/>
                         <outlet property="resultSumLabel" destination="P2H-Kk-ndw" id="9K8-ax-Bgw"/>
                     </connections>
                 </viewController>

@@ -1,20 +1,20 @@
 //
-//  NikolaiZharikovVC.swift
+//  AdminVC.swift
 //  MyProject
 //
-//  Created by Maxim Belyasov on 19.06.22.
+//  Created by Maxim Belyasov on 21.06.22.
 //
 
 import UIKit
 import SafariServices
 
-class NikolaiZharikovVC: UIViewController {
+class AdminVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     @IBAction func newsButton() {
-            if let url = URL(string: "https://www.instagram.com/remont_i_otdelka.by/") {
+            if let url = URL(string: "https://www.instagram.com/maxim_belyasov/") {
                 let svc = SFSafariViewController(url: url)
                 present(svc, animated: true, completion: nil)
             }

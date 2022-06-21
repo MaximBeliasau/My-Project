@@ -12,8 +12,6 @@ class SanTexVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func newsButton() {
@@ -22,11 +20,11 @@ class SanTexVC: UIViewController {
                 present(svc, animated: true, completion: nil)
             }
         }
+    
     @IBAction func newsButtonTwo() {
         if let url = URL(string: "https://www.instagram.com/santexby/") {
             let svc = SFSafariViewController(url: url)
             present(svc, animated: true, completion: nil)
         }
-        
     }
 }
